@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1038107293843",
+    "project_id": "pearlline-dental",
+    "storage_bucket": "pearlline-dental.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038107293843:android:a6833f2e8cfc2a33d13566",
+        "android_client_info": {
+          "package_name": "com.example.pearline_dental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx52i9OFdxSQNqxMDZgkJoJJr1rjhoUho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
