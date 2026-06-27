@@ -24,4 +24,5 @@ abstract class AppRoutes {
   static const String payment = '/payment';
   static const String myPayments = '/my-payments';
   static const String bannerDetail = '/banner-detail';
+  static const String notificationDetail = '/notification-detail';
 }

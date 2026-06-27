@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:pearline_dental/app/core/theme/app_theme.dart';
 import 'package:shimmer/shimmer.dart';
+import '../../../routes/app_routes.dart';
 import '../controllers/notifications_controller.dart';
 
 class NotificationsView extends StatefulWidget {
@@ -142,7 +143,10 @@ class _NotificationCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         child: InkWell(
           borderRadius: BorderRadius.circular(16),
-          onTap: () {},
+          onTap: () => Get.toNamed(
+            AppRoutes.notificationDetail,
+            arguments: {'item': item, 'timeAgo': timeAgo},
+          ),
           child: Padding(
             padding: const EdgeInsets.all(14),
             child: Row(

@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import 'package:pearline_dental/app/modules/home/views/banner_detail_view.dart';
 import 'package:pearline_dental/app/modules/payments/bindings/payment_binding.dart';
 import 'package:pearline_dental/app/modules/payments/views/payment_view.dart';
+import '../modules/notifications/views/notification_detail_view.dart';
 import 'app_routes.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
@@ -150,6 +151,11 @@ class AppPages {
     GetPage(
       name: AppRoutes.bannerDetail,
       page: () => const BannerDetailView(),
+    ),
+
+    GetPage(
+      name: AppRoutes.notificationDetail,
+      page: () => const NotificationDetailView(),
     ),
   ];
 }
