@@ -1,17 +1,86 @@
-# pearline_dental
+# 🦷 Pearlline Dental
 
-A new Flutter project.
+A modern Flutter-based dental clinic application that enables patients to book appointments, make secure online payments, receive notifications, and communicate with the clinic—all from a simple and intuitive interface.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+* 🔐 Secure Login & Registration
+* 👤 Patient Profile Management
+* 📅 Book & Manage Appointments
+* 💳 Razorpay Payment Integration
+* 🔔 Firebase Push Notifications (FCM)
+* 💬 AI Chat Support
+* 🖼️ Dental Gallery (Images & Videos)
+* 📄 Payment History
+* 🦷 Treatment & Service Information
+* 📱 Responsive Material Design UI
+* 🌙 Clean and User-Friendly Experience
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+* Flutter
+* Dart
+* GetX (State Management)
+* Firebase
+* Razorpay
+* REST APIs
+* GetStorage (Local Storage)
+* Cached Network Image
+* URL Launcher
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Project Structure
+
+```
+lib/
+├── app/
+│   ├── modules/
+│   ├── routes/
+│   ├── services/
+│   ├── widgets/
+│   └── constants/
+├── main.dart
+```
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/pearline_dental.git
+```
+
+### Install Dependencies
+
+```bash
+flutter pub get
+```
+
+### Run the Project
+
+```bash
+flutter run
+```
+
+## 📦 Build APK
+
+```bash
+flutter build apk --release
+```
+
+## 📱 Requirements
+
+* Flutter 3.44+
+* Dart 3.12+
+* Android Studio / VS Code
+* Android SDK
+
+
+## 👨‍💻 Developed By
+
+**Subham**
+
+Flutter Developer
+
+## 📄 License
+
+This project is intended for educational and commercial use with permission from the project owner.
