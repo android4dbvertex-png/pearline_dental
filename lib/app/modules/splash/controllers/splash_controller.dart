@@ -11,14 +11,12 @@ class SplashController extends GetxController {
   }
 
   Future<void> _navigate() async {
+    // Fire and forget — don't block splash navigation on this
+    AppUpdateService.checkForUpdate();
 
-    // Check for update first
-    await AppUpdateService.checkForUpdate();
     await Future.delayed(const Duration(seconds: 3));
 
-    Get.offAllNamed(AppRoutes.login);
-    if (StorageService.isLoggedIn &&
-        StorageService.getToken() != null) {
+    if (StorageService.isLoggedIn && StorageService.getToken() != null) {
       Get.offAllNamed(AppRoutes.home);
     } else {
       Get.offAllNamed(AppRoutes.login);
