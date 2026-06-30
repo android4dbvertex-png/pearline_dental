@@ -9,7 +9,7 @@ A modern Flutter-based dental clinic application that enables patients to book a
 * 📅 Book & Manage Appointments
 * 💳 Razorpay Payment Integration
 * 🔔 Firebase Push Notifications (FCM)
-* 💬 AI Chat Support
+* 💬 Chat Support
 * 🖼️ Dental Gallery (Images & Videos)
 * 📄 Payment History
 * 🦷 Treatment & Service Information
