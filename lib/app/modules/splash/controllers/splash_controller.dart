@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
+import '../../../core/services/storage_service.dart';
 import '../../../routes/app_routes.dart';
+import '../../services/app_update_service.dart';
 
 class SplashController extends GetxController {
   @override
@@ -9,16 +11,17 @@ class SplashController extends GetxController {
   }
 
   Future<void> _navigate() async {
+
+    // Check for update first
+    await AppUpdateService.checkForUpdate();
     await Future.delayed(const Duration(seconds: 3));
 
-    // Debug: force navigate to login for now
     Get.offAllNamed(AppRoutes.login);
-
-    // Later replace with:
-    // if (StorageService.isLoggedIn) {
-    //   Get.offAllNamed(AppRoutes.home);
-    // } else {
-    //   Get.offAllNamed(AppRoutes.login);
-    // }
+    if (StorageService.isLoggedIn &&
+        StorageService.getToken() != null) {
+      Get.offAllNamed(AppRoutes.home);
+    } else {
+      Get.offAllNamed(AppRoutes.login);
+    }
   }
 }
